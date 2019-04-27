@@ -11,17 +11,18 @@
       <init-param> 
          <param-name>jersey.config.server.provider.packages</param-name> 
          <param-value>
-        	th.ac.ku.kps.eng.cpe.soa.driveCar.controller,com.fasterxml.jackson.jaxrs.json,th.ac.ku.kps.eng.cpe.soa.filter 
+        	th.ac.ku.kps.eng.cpe.soa.driveCar.controller,
+	com.fasterxml.jackson.jaxrs.json
         </param-value> 
       </init-param> 
+       <init-param>
+            <param-name>javax.ws.rs.Application</param-name>
+            <param-value>th.ac.ku.kps.eng.cpe.soa.driveCar.controller.CustomApplication</param-value>
+        </init-param>
       <init-param> 
          <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name> 
          <param-value>true</param-value> 
       </init-param>
-      <init-param> 
-         <param-name>com.sun.jersey.spi.container.ContainerRequestFilters</param-name> 
-         <param-value>th.ac.ku.kps.eng.cpe.soa.filter.CORSFilter</param-value> 
-      </init-param> 
       <load-on-startup>1</load-on-startup>
 
 

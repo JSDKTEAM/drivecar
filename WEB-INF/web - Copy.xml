@@ -23,6 +23,7 @@
       <init-param> 
          <param-name>com.sun.jersey.spi.container.ContainerRequestFilters</param-name> 
          <param-value>th.ac.ku.kps.eng.cpe.soa.filter.AuthFilter</param-value> 
+         <param-value>th.ac.ku.kps.eng.cpe.soa.filter.CORSFilter</param-value> 
       </init-param> 
      <load-on-startup>1</load-on-startup>
 
